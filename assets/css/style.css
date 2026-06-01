@@ -643,9 +643,19 @@ body {
     color: var(--primary-color);
 }
 
+#menu {
+    display: flex;
+}
 
+.mobile-menu {
+    display: none;
+}
 
 @media (max-width: 992px) {
+    .mobile-menu {
+        display: block;
+
+    }
 
     .nav_menu,
     .nav_btn {
@@ -668,5 +678,25 @@ body {
 
     #menu {
         display: none;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    .grid-contact,
+    .grid-hero {
+
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 25px;
     }
 }
